@@ -25,9 +25,11 @@ Todo app functionality and design on your discretion, must be responsive to mobi
 
 docker build .
 <br>
-docker-compose up -d --build
+docker compose up -d --build
 <br>
-docker-compose exec web python manage.py migrate
+docker compose exec web python manage.py migrate
+
+docker compose exec web python manage.py startapp appname .
 
 # Frontend
 
